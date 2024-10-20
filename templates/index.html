@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi AI Agent App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-AI Agent App</h1>
+        <p>Ask any question related to agents, prompt engineering, or adversarial attacks!</p>
+        
+        <div class="input-box">
+            <form action="/ask" method="post">
+                <input type="text" id="question" name="question" placeholder="Type your question here" required>
+                <button type="submit">Ask</button>
+            </form>
+        </div>
+            {% if results %}
+            <div id="response-box">
+            <h2>Response:</h2>
+                {% for result in results %}
+                    <li>User Query: {{ result.user_query }} </li>
+                    <li>Node: {{ result.node }} </li>
+                    <li>Response: {{ result.documents }}</li>
+                {% endfor %}
+            </div>
+            {% endif %}
+</div>
+</body>
+</html>

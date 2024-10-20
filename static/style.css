@@ -1,0 +1,113 @@
+/* static/style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px 20px;
+    border: 2px solid #dddddd;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #4A90E2;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px 8px 8px 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Styling for the response box */
+#response-box {
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #4A90E2;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: block; /* Ensure it is always shown */
+}
+
+h2 {
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+#response-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#response-box ul li {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#response-box ul li:hover {
+    background-color: #f0f8ff;
+}
+
+#response {
+    color: #333333;
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+.hidden {
+    display: none;
+}

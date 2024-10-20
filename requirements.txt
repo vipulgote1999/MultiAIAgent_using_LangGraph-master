@@ -1,0 +1,11 @@
+Flask
+python-dotenv
+langchain
+langgraph
+cassio
+langchain_community
+tiktoken
+langchain-groq
+langchainhub
+langchain_huggingface
+wikipedia
